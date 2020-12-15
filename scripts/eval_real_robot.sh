@@ -1,0 +1,12 @@
+python train.py --domain_name RealRobotEnv-v0 \
+	--cameras 8 10 --frame_stack 1 --observation_type pixel --encoder_type pixel \
+	--work_dir tmp \
+	--eval_freq 150 --num_eval_episodes 30 \
+	--log_interval 1 \
+	--pre_transform_image_size 100 --image_size 84 --agent rad_sac --data_aug crop \
+	--seed 16 \
+	--batch_size 128 --num_updates 10 --num_train_steps 1 --init_steps 0 \
+	--reward_type blue_pick_red_place --model_dir real_robot_data/v0/.../model \
+	--model_step 2550 \
+  --log_networks_freq 30000 \
+	--actor_log_std_max 0
