@@ -1,5 +1,9 @@
 # Framework for Efficient Robotic Manipulation
-FERM is a framework that enables robots to learn tasks within an hour of real time training. Project Page: [https://sites.google.com/view/efficient-robotic-manipulation](https://sites.google.com/view/efficient-robotic-manipulation).
+FERM is a framework that enables robots to learn tasks within an hour of real time training. 
+
+Paper: [arXiv link](https://arxiv.org/abs/2012.07975)
+
+Project Page: [https://sites.google.com/view/efficient-robotic-manipulation](https://sites.google.com/view/efficient-robotic-manipulation).
 
 The project and this codebase are joint work by Albert Zhan*, Ruihan (Philip) Zhao*, Lerrel Pinto, Pieter Abbeel, Misha Laskin. The implementation is based off of [RAD](https://github.com/mlaskin/rad).
 
@@ -33,3 +37,14 @@ To use demonstrations, save the ```(obs, next_obs, actions, rewards, not_dones)`
 #### Sim demonstrations
 
 Our sim experiments use large amounts of demonstrations, which are generated on the fly through an expert policy that uses state input. Include the tags ```--demo_model_dir=path_to_expert --demo_model_step=X```, where the expert policy is saved as ```path_to_expert/model/actor_X.pt``` and ```path_to_expert/model/critic_X.pt```.
+
+### Citation
+  
+```
+@article{zhan2020framework,
+  title={A Framework for Efficient Robotic Manipulation},
+  author={Zhan, Albert and Zhao, Philip and Pinto, Lerrel and Abbeel, Pieter and Laskin, Michael},
+  journal={arXiv preprint arXiv:2012.07975},
+  year={2020}
+}
+```
