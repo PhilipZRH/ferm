@@ -1,5 +1,6 @@
-# Framework for Efficient Robotic Manipulation
-FERM is a framework that enables robots to learn tasks within an hour of real time training. 
+# Contrastive Pre-training and Data Augmentation for Efficient Robotic Learning (CoDER),
+
+CoDER is a method that enables robots to learn tasks within an hour of real time training. 
 
 Paper: [arXiv link](https://arxiv.org/abs/2012.07975)
 
